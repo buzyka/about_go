@@ -5,8 +5,20 @@ import (
 	"time"
 )
 
+type BigPerson interface {
+	GetName() string
+	SetName(name string)
+	GetAge() int
+	SetAge(age int)
+	GetBirthday() time.Time
+	SetBirthday(birthday time.Time)
+	Greet() string
+	HaveBirthday()
+	IsOlderThan(age int) bool
+}
+
 type Person struct {
-	name string
+	name     string
 	birthday time.Time
 	age  int
 }

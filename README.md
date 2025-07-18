@@ -1,6 +1,6 @@
 # About Go
 
-1. Introduction & Motivation (5 min)
+## 1. Introduction & Motivation (5 min)
 
 Go is a **statically typed, compiled, imperative** language with strong support for **procedural** and **concurrent** programming. It borrows a few functional ideas (first-class functions, closures), but its core design is **not** functional.
 
@@ -8,7 +8,7 @@ Why Go?
 – Origin story at Google
 – Target domains: cloud services, microservices, CLI tools
 
-2. Init Project & go.mod (10 min)
+## 2. Init Project & go.mod (10 min)
 Modules vs GOPATH
 – Pre-1.11 GOPATH baggage: global workspace, import path headaches
 – go mod init, go.mod file anatomy (module path, go 1.x, require, replace)
@@ -224,7 +224,7 @@ Sample “Hello, Gin”
 r := gin.Default()
 r.GET("/ping", func(c *gin.Context) {
   c.JSON(200, gin.H{"message": "pong"})
-})
+  })
 r.Run() // :8080
 ```
 Middleware & grouping
